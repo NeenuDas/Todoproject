@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+                    <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{taskdv.name}}</h5>
+                                <p class="card-text"> {{taskdv.priority}}</p>
+                                 <p class="card-text"> {{taskdv.date}}</p>
+                                <a href="{% url 'delete' taskdv.id %}" class="btn btn-info">Delete</a>
+                                <a href="{% url 'update' taskdv.id %}" class="btn btn-info">Update</a><br><br>
+
+                            </div>
+                    </div>
+
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    {% for i in task %}-->
+<!--            {{i.name}}&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt; {{i.priority}}<br>-->
+<!--    {% endfor %}-->
+
+<!--</body>-->
+<!--</html>-->

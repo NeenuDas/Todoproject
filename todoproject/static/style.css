@@ -1,0 +1,9 @@
+box
+ {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+
+
